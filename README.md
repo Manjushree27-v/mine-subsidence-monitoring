@@ -83,5 +83,5 @@ The frontend dashboard is currently being developed. Backend, MQTT, database, ha
 
 ## Team
 
-Mine Subsidence Monitoring Project  
+V N Manjushree from team VYQENTRA 
 Dr. Ambedkar Institute of Technology, Bengaluru
