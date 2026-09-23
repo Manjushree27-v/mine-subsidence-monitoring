@@ -1,16 +1,87 @@
-# React + Vite
+# Mine Subsidence Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+AI-enabled real-time mine subsidence monitoring and early warning dashboard for underground coal mines.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This dashboard provides a real-time interface for monitoring ground conditions across a mine surface panel.
 
-## React Compiler
+It visualizes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Ground tilt
+- Ground displacement
+- Micro vibration
+- Crack opening
+- Sensor node health
+- Battery and signal strength
+- AI-based risk assessment
+- Anomaly scores
+- Historical sensor trends
+- Mine surface deformation zones
 
-## Expanding the Oxlint configuration
+## Current Version
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The current version uses controlled/synthetic sensor data to demonstrate the dashboard and monitoring workflow.
+
+The system is being developed toward integration with:
+
+**ESP32 → LoRa → Raspberry Pi → MQTT → Spring Boot → PostgreSQL → AI/ML → React Dashboard**
+
+## Tech Stack
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+- Leaflet
+- Recharts
+- Lucide React
+
+### Planned Backend
+- Spring Boot
+- REST APIs
+- WebSocket
+- PostgreSQL
+- MQTT
+
+### AI / ML
+- Python
+- Scikit-learn
+- Isolation Forest
+
+## Dashboard Features
+
+- Real-time sensor monitoring
+- Mine surface deformation map
+- Sensor node visualization
+- Panel health monitoring
+- Risk classification
+- AI anomaly detection
+- Historical sensor trends
+- Warning and critical alerts
+- Operator acknowledgement
+- Simulation mode for testing different risk conditions
+
+## Risk Levels
+
+The current prototype uses:
+
+| Risk Score | Status |
+|---|---|
+| 0–30 | SAFE |
+| 31–60 | WARNING |
+| 61–100 | CRITICAL |
+
+These ranges are prototype dashboard classifications and are not intended as validated regulatory thresholds.
+
+## Project Status
+
+🚧 **Under Development**
+
+The frontend dashboard is currently being developed. Backend, MQTT, database, hardware and AI components will be integrated progressively.
+
+## Team
+
+Mine Subsidence Monitoring Project  
+Dr. Ambedkar Institute of Technology, Bengaluru
